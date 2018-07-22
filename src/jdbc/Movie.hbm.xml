@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 6, 2017 3:52:22 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="jdbc.Movie" table="movie" catalog="movie_library" optimistic-lock="version">
+        <id name="movieId" type="string">
+            <column name="movie_id" length="45" />
+            <generator class="assigned" />
+        </id>
+        <property name="title" type="string">
+            <column name="title" length="60" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="800" not-null="true" />
+        </property>
+        <property name="runningTime" type="string">
+            <column name="runningTime" length="45" not-null="true" />
+        </property>
+        <property name="year" type="int">
+            <column name="year" not-null="true" />
+        </property>
+        <property name="rating" type="double">
+            <column name="rating" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="watchStatus" type="string">
+            <column name="watchStatus" length="45" not-null="true" />
+        </property>
+        <property name="favourite" type="string">
+            <column name="favourite" length="45" not-null="true" />
+        </property>
+        <property name="poster" type="string">
+            <column name="poster" length="100" not-null="true" />
+        </property>
+        <property name="offlineLink" type="string">
+            <column name="offlineLink" length="250" not-null="true" />
+        </property>
+        <property name="onlineLink" type="string">
+            <column name="onlineLink" length="300" not-null="true" />
+        </property>
+        <property name="trailerLink" type="string">
+            <column name="trailerLink" length="250" not-null="true" />
+        </property>
+        <property name="addedDate" type="date">
+            <column name="addedDate" length="10" not-null="true" />
+        </property>
+        <property name="allMovieGenres" type="string">
+            <column name="allMovieGenres" length="100" not-null="true" />
+        </property>
+        <set name="movieGenres" table="movie_genre" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="movie_id" length="45" not-null="true" />
+            </key>
+            <one-to-many class="jdbc.MovieGenre" />
+        </set>
+    </class>
+</hibernate-mapping>

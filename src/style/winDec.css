@@ -1,0 +1,254 @@
+
+
+
+/*
+*	Minimize button
+*/
+.decoration-button-minimize{
+    -fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../img/minimize.png");
+    -fx-background-repeat:no-repeat;
+}
+
+.decoration-button-minimize:hover{
+    -fx-background-color: null;
+    -fx-background-image:url("../img/minimize-hover.png");
+    -fx-background-repeat:no-repeat;
+}
+/*
+*	Maximize button
+*/
+.decoration-button-maximize{
+    -fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../img/maximize.png");
+    -fx-background-repeat:no-repeat;
+}
+.decoration-button-maximize:hover{
+    -fx-background-color: null;
+    -fx-background-image:url("../img/maximize-hover.png");
+    -fx-background-repeat:no-repeat;
+}
+.decoration-button-restore{
+    -fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../img/restore.png");
+    -fx-background-repeat:no-repeat;
+}
+.decoration-button-restore:hover{
+    -fx-background-color: null;
+    -fx-background-image:url("../img/restore-hover.png");
+    -fx-background-repeat:no-repeat;
+}
+/*
+*	Close button
+*/
+.decoration-button-close{
+    -fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../img/close.png");
+    -fx-background-repeat:no-repeat;
+}
+.decoration-button-close:hover{
+    -fx-background-color: null;
+    -fx-background-image:url("../img/close-hover.png");
+    -fx-background-repeat:no-repeat;
+}
+/*
+*	Fullscreen button
+*/
+.decoration-button-fullscreen{
+    -fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../img/fullscreen.png");
+    -fx-background-repeat:no-repeat;
+}
+.decoration-button-fullscreen:hover{
+    -fx-background-color: null;
+    -fx-background-image:url("../img/fullscreen-hover.png");
+    -fx-background-repeat:no-repeat;
+}
+
+.decoration-button-loginClose{
+    -fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../img/loginClose.png");
+    -fx-background-repeat:no-repeat;
+}
+.decoration-button-loginClose:hover{
+    -fx-background-color: null;
+    -fx-background-image:url("../img/loginClose-hover.png");
+    -fx-background-repeat:no-repeat;
+}
+
+
+.decoration-button-addPlus{
+    -fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../img/addPlus.png");
+    -fx-background-repeat:no-repeat;
+}
+.decoration-button-addPlus:hover{
+    -fx-background-color: null;
+    -fx-background-image:url("../img/addPlus-hover.png");
+    -fx-background-repeat:no-repeat;
+}
+
+.decoration-button-info{
+    -fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../img/info.png");
+    -fx-background-repeat:no-repeat;
+}
+.decoration-button-info:hover{
+    -fx-background-color: null;
+    -fx-background-image:url("../img/info-hover.png");
+    -fx-background-repeat:no-repeat;
+}
+
+.decoration-button-settings{
+    -fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../img/settings.png");
+    -fx-background-repeat:no-repeat;
+}
+.decoration-button-settings:hover{
+    -fx-background-color: null;
+    -fx-background-image:url("../img/settings-hover.png");
+    -fx-background-repeat:no-repeat;
+}
+
+.decoration-button-like{
+    -fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../img/like.png");
+    -fx-background-repeat:no-repeat;
+}
+.decoration-button-like:hover{
+    -fx-background-color: null;
+    -fx-background-image:url("../img/like-hover.png");
+    -fx-background-repeat:no-repeat;
+}
+.decoration-button-like:focused{
+    -fx-background-color: null;
+    -fx-background-image:url("../img/like-selected.png");
+    -fx-background-repeat:no-repeat;
+}
+
+
+
+
+.decoration-button-eye{
+    -fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../img/eye.png");
+    -fx-background-repeat:no-repeat;
+}
+.decoration-button-eye:hover{
+    -fx-background-color: null;
+    -fx-background-image:url("../img/eye-hover.png");
+    -fx-background-repeat:no-repeat;
+}
+.decoration-button-eye:focused{
+    -fx-background-color: null;
+    -fx-background-image:url("../img/eye-hover.png");
+    -fx-background-repeat:no-repeat;
+}
+
+.decoration-button-movies:focused{
+    -fx-background-color: null;
+    -fx-background-image:url("../img/movies.png");
+    -fx-background-repeat:no-repeat;
+}
+
+.decoration-button-closeForm{
+    -fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../img/closeForm.png");
+    -fx-background-repeat:no-repeat;
+}
+.decoration-button-closeForm:hover{
+    -fx-background-color: null;
+    -fx-background-image:url("../img/closeForm-hover.png");
+    -fx-background-repeat:no-repeat;
+}
+.decoration-button-refresh{
+    -fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../img/refresh.png");
+    -fx-background-repeat:no-repeat;
+}
+.decoration-button-refresh:hover{
+    -fx-background-color: null;
+    -fx-background-image:url("../img/refresh-hover.png");
+    -fx-background-repeat:no-repeat;
+}
+.decoration-button-table{
+    -fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../img/table.png");
+    -fx-background-repeat:no-repeat;
+}
+.decoration-button-table:hover{
+    -fx-background-color: null;
+    -fx-background-image:url("../img/table-hover.png");
+    -fx-background-repeat:no-repeat;
+}
+
+.decoration-button-delete{
+    -fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../img/delete.png");
+    -fx-background-repeat:no-repeat;
+}
+
+.decoration-button-delete:hover{
+    -fx-background-color: null;
+    -fx-background-image:url("../img/delete-hover.png");
+    -fx-background-repeat:no-repeat;
+}
+
+/*#favouriteBtn{
+    -fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../img/like.png");
+    -fx-background-repeat:no-repeat;
+}*/
+
+#favouriteBtn:hover{
+    -fx-background-color: null;
+    -fx-background-image:url("../img/like-hover.png");
+    -fx-background-repeat:no-repeat;
+}
+#seenBtn:hover{
+    -fx-background-color: null;
+    -fx-background-image:url("../img/eye-hover.png");
+    -fx-background-repeat:no-repeat;
+}
+
+.decoration-label-github{
+    -fx-text-fill: #fff;
+
+}
+.decoration-label-github:hover{
+    -fx-text-fill: lightblue;
+}
+
+

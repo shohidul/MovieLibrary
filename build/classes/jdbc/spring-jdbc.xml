@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/tx 
+    http://www.springframework.org/schema/tx/spring-tx.xsd">
+    
+    <context:annotation-config/>
+    <context:component-scan base-package="jdbc"/>
+    <!--<tx:annotation-driven/>-->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/movie_library"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123"/>            
+    </bean>
+    <!--    <bean id="employeeSupportDao" class="jdbc.EmployeeSupportDao">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>-->
+    <bean id="sessionFactory" 
+          class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+        <!--for annotation based use the following 2 conf.-->
+        <!--        <property name="packagesToScan" value="jdbc"></property>
+        <property name="annotatedClasses">
+            <list>
+                <value>jdbc.Employee</value>
+            </list>
+        </property>-->
+        <!--for xml based use the following conf.-->
+        <property name="mappingResources">
+            <list>
+                <value>jdbc/Movie.hbm.xml</value>
+                <value>jdbc/MovieGenre.hbm.xml</value>
+                <value>jdbc/Genre.hbm.xml</value>
+            </list>
+            
+        </property>       
+       
+        <property name="hibernateProperties">
+            <value>
+                hibernate.dialect=org.hibernate.dialect.MySQLDialect
+                hibernate.show_sql=true
+            </value>
+        </property>
+    </bean>
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+    <bean id="transactionManager"
+          class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+</beans>

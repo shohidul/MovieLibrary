@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 6, 2017 3:52:22 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="jdbc.MovieGenre" table="movie_genre" catalog="movie_library" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="genre" class="jdbc.Genre" fetch="select">
+            <column name="genre" length="45" not-null="true" />
+        </many-to-one>
+        <many-to-one name="movie" class="jdbc.Movie" fetch="select">
+            <column name="movie_id" length="45" not-null="true" />
+        </many-to-one>
+        <property name="duplicateMovId" type="string">
+            <column name="duplicate_movId" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 6, 2017 3:52:22 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="jdbc.Genre" table="genre" catalog="movie_library" optimistic-lock="version">
+        <id name="genre" type="string">
+            <column name="genre" length="45" />
+            <generator class="assigned" />
+        </id>
+        <set name="movieGenres" table="movie_genre" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="genre" length="45" not-null="true" />
+            </key>
+            <one-to-many class="jdbc.MovieGenre" />
+        </set>
+    </class>
+</hibernate-mapping>

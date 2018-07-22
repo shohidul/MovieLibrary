@@ -1,0 +1,57 @@
+
+
+.label{
+
+  -fx-border-radius: 10 10 0 0;
+  -fx-background-radius: 10 10 0 0;
+
+  /* top-left, top-right, bottom-right, and bottom-left corners, in that order. */
+}
+#movieTableBtn{
+
+  -fx-border-radius: 20 20 0 0;
+  -fx-background-radius: 20 20 0 0;
+
+  /* top-left, top-right, bottom-right, and bottom-left corners, in that order. */
+}
+#tableBtn{
+
+  -fx-border-radius: 20 20 0 0;
+  -fx-background-radius: 20 20 0 0;
+
+  /* top-left, top-right, bottom-right, and bottom-left corners, in that order. */
+}
+.button{
+    
+    -fx-border-radius: 20 20 20 20;
+  -fx-background-radius: 20 20 20 20;
+}
+.text-field{
+    
+    -fx-border-radius: 10 10 10 10;
+  -fx-background-radius: 10 10 10 10;
+}
+/*.text-area .content{
+    
+    -fx-border-radius: 10 10 10 10;
+  -fx-background-radius: 10 10 10 10;
+}*/
+/*.text-area{
+    
+    -fx-border-radius: 10 10 10 10;
+  -fx-background-radius: 10 10 10 10;
+}*/
+.combo-box{
+    
+    -fx-border-radius: 10 10 10 10;
+  -fx-background-radius: 10 10 10 10;
+}
+.image-view-wrapper:border {
+    -fx-border-color: white;
+    -fx-border-style: solid;
+    -fx-border-width: 5;
+}
+.jfx-radio-button {
+    -fx-selected-color:  #0F7DE5;
+    /*-fx-unselected-color: blue;*/
+}

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" maxHeight="768.0" maxWidth="1366.0" minHeight="650.0" minWidth="1017.0" prefHeight="650.0" prefWidth="1017.0" style="-fx-background-color: #17181B;" stylesheets="@../style/scrollBar.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="movielibrary.MainFrameController">
+   <center>
+      <StackPane fx:id="stackPane" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <AnchorPane fx:id="mainAnchor" style="-fx-background-color: #17181B;">
+               <children>
+                  <BorderPane layoutX="9.0" layoutY="7.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <center>
+                        <StackPane fx:id="stack4DialogLayout" stylesheets="@../style/winDec.css">
+                           <children>
+                              <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" prefWidth="1017.0" style="-fx-background-color: #17181B;">
+                                 <content>
+                                    <FlowPane fx:id="mainFlowPane" hgap="35.0" prefHeight="200.0" prefWidth="1017.0" style="-fx-background-color: #17181B;" vgap="15.0">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" top="10.0" />
+                                       </padding>
+                                    </FlowPane>
+                                 </content>
+                                 <BorderPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" />
+                                 </BorderPane.margin>
+                              </ScrollPane>
+                           </children>
+                        </StackPane>
+                     </center>
+                     <top>
+                        <HBox fx:id="hbox2" prefHeight="34.0" style="-fx-background-color: #17181B;" stylesheets="@../style/winDec.css" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button fx:id="moviesBtn" mnemonicParsing="false" onAction="#moviesBtnAction" prefHeight="34.0" prefWidth="81.0" style="-fx-background-color: transparent;" styleClass="decoration-button-movies" text="Movies" textFill="#cdcdcd">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button layoutX="20.0" layoutY="10.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="65.0" style="-fx-background-color: transparent;" styleClass="decoration-button-movies" text="Series" textFill="#cdcdcd">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button layoutX="82.0" layoutY="10.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: transparent;" styleClass="decoration-button-movies" text="Anime" textFill="#cdcdcd">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" />
+                                 </padding>
+                              </Button>
+                              <Label prefHeight="29.0" prefWidth="39.0" text="Genre" textFill="#cdcdcd">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <JFXComboBox fx:id="genreComboFilter" onAction="#genreComboFilterAction" prefHeight="29.0" prefWidth="122.0" stylesheets="@../style/comboBox.css">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </JFXComboBox>
+                              <Label layoutX="224.0" layoutY="10.0" prefHeight="29.0" prefWidth="52.0" text="Sort by" textFill="#cdcdcd">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <JFXComboBox fx:id="sortByComboFilter" layoutX="273.0" layoutY="10.0" onAction="#sortByComboFilterAcrion" prefHeight="29.0" prefWidth="119.0" stylesheets="@../style/comboBox.css" />
+                              <Region HBox.hgrow="ALWAYS" />
+                              <JFXTextField fx:id="searchFieldFilter" alignment="CENTER" focusColor="#2b6ed2" labelFloat="true" maxWidth="58.0" minWidth="49.0" prefHeight="31.0" prefWidth="49.0" promptText="Search" styleClass="decoration-button-search" unFocusColor="#393535" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="6.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <Button fx:id="watchedBtnFilter" onAction="#watchedBtnFilterAction" prefHeight="20.0" prefWidth="20.0" styleClass="decoration-button-eye">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="12.0" top="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="favouriteBtnFilter" onAction="#favouriteBtnFilterAction" prefHeight="20.0" prefWidth="20.0" styleClass="decoration-button-like">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="12.0" top="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="addContent" alignment="CENTER" onMouseClicked="#addContent_MouseClickCounter" prefHeight="16.0" prefWidth="16.0" styleClass="decoration-button-addPlus">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="12.0" top="6.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="infoBtn" onMouseClicked="#infoBtnClickedListener" prefHeight="16.0" prefWidth="16.0" styleClass="decoration-button-info">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="12.0" top="6.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button prefHeight="16.0" prefWidth="16.0" styleClass="decoration-button-settings">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="12.0" top="6.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <effect>
+                              <DropShadow offsetY="2.0" />
+                           </effect>
+                        </HBox>
+                     </top>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </center>
+   <top>
+      <VBox style="-fx-background-color: #16171A;" stylesheets="@../style/winDec.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="hbox" prefHeight="34.0" prefWidth="900.0">
+               <children>
+                  <GridPane prefHeight="45.0" prefWidth="905.0" HBox.hgrow="ALWAYS">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="fullscreen" layoutX="3.0" layoutY="3.0" mnemonicParsing="false" onAction="#aksifullscreen" prefHeight="30.0" prefWidth="34.0" styleClass="decoration-button-fullscreen" />
+                           </children>
+                        </AnchorPane>
+                        <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="295.0" text="FX Movie Library" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+                           <children>
+                              <HBox layoutX="64.0" stylesheets="@../style/winDec.css" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="6.0">
+                                 <children>
+                                    <Button fx:id="minimize" mnemonicParsing="false" onAction="#aksiminimize" pickOnBounds="true" prefHeight="16.0" prefWidth="16.0" style="" styleClass="decoration-button-minimize" text="" AnchorPane.rightAnchor="68.0" AnchorPane.topAnchor="0.0">
+                                       <font>
+                                          <Font size="1.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="maximize" mnemonicParsing="false" onAction="#aksiMaximized" pickOnBounds="true" prefHeight="16.0" prefWidth="16.0" styleClass="decoration-button-maximize" text="" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="0.0">
+                                       <font>
+                                          <Font size="1.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="close" mnemonicParsing="false" onAction="#aksiClose" pickOnBounds="true" prefHeight="16.0" prefWidth="16.0" styleClass="decoration-button-close" text="" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <rotationAxis>
+                                          <Point3D />
+                                       </rotationAxis>
+                                       <font>
+                                          <Font size="1.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

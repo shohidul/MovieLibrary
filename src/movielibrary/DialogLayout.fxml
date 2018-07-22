@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="detailsAnchorPane" prefHeight="700.0" prefWidth="1360.0" style="-fx-background-color: #545;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="movielibrary.DialogLayoutController">
+   <children>
+      <Button fx:id="closeDetailsBtn" layoutX="1278.0" layoutY="34.0" mnemonicParsing="false" onAction="#closeDetailsBtnAction" text="Button" />
+      <VBox layoutX="95.0" layoutY="80.0" style="-fx-background-color: #222;" AnchorPane.leftAnchor="95.0" AnchorPane.topAnchor="55.0">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="317.0" layoutX="92.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="95.0" AnchorPane.topAnchor="80.0" />
+         </children>
+      </VBox>
+      <JFXButton layoutX="440.0" layoutY="530.0" AnchorPane.leftAnchor="440.0" AnchorPane.topAnchor="530.0" />
+   </children>
+</AnchorPane>

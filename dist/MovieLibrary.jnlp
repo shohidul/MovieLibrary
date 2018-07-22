@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MovieLibrary.jnlp">
+  <information>
+    <title>MovieLibrary</title>
+    <vendor>Hridoy</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="MovieLibrary.jar" size="4136472" download="eager" />
+    <jar href="lib\antlr-2.7.7.jar" size="445288" download="eager" />
+    <jar href="lib\classmate-1.3.0.jar" size="64110" download="eager" />
+    <jar href="lib\commons-logging-1.2-javadoc.jar" size="158448" download="eager" />
+    <jar href="lib\commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib\controlsfx-8.40.12.jar" size="996389" download="eager" />
+    <jar href="lib\dom4j-1.6.1.jar" size="313898" download="eager" />
+    <jar href="lib\hibernate-commons-annotations-5.0.1.Final.jar" size="75288" download="eager" />
+    <jar href="lib\hibernate-core-5.2.9.Final.jar" size="6614635" download="eager" />
+    <jar href="lib\hibernate-jpa-2.1-api-1.0.0.Final.jar" size="113371" download="eager" />
+    <jar href="lib\jandex-2.0.3.Final.jar" size="186741" download="eager" />
+    <jar href="lib\javassist-3.20.0-GA.jar" size="750581" download="eager" />
+    <jar href="lib\jboss-logging-3.3.0.Final.jar" size="66802" download="eager" />
+    <jar href="lib\jboss-transaction-api_1.2_spec-1.0.1.Final.jar" size="28352" download="eager" />
+    <jar href="lib\jfoenix-1.0.0.jar" size="2186636" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+    <jar href="lib\spring-aop-4.3.7.RELEASE-javadoc.jar" size="889245" download="eager" />
+    <jar href="lib\spring-aop-4.3.7.RELEASE-sources.jar" size="378069" download="eager" />
+    <jar href="lib\spring-aop-4.3.7.RELEASE.jar" size="380004" download="eager" />
+    <jar href="lib\spring-aspects-4.3.7.RELEASE-javadoc.jar" size="63879" download="eager" />
+    <jar href="lib\spring-aspects-4.3.7.RELEASE-sources.jar" size="36911" download="eager" />
+    <jar href="lib\spring-aspects-4.3.7.RELEASE.jar" size="58724" download="eager" />
+    <jar href="lib\spring-beans-4.3.7.RELEASE-javadoc.jar" size="1473388" download="eager" />
+    <jar href="lib\spring-beans-4.3.7.RELEASE-sources.jar" size="726618" download="eager" />
+    <jar href="lib\spring-beans-4.3.7.RELEASE.jar" size="762747" download="eager" />
+    <jar href="lib\spring-context-4.3.7.RELEASE-javadoc.jar" size="2564014" download="eager" />
+    <jar href="lib\spring-context-4.3.7.RELEASE-sources.jar" size="1136294" download="eager" />
+    <jar href="lib\spring-context-4.3.7.RELEASE.jar" size="1139269" download="eager" />
+    <jar href="lib\spring-context-support-4.3.7.RELEASE-javadoc.jar" size="449717" download="eager" />
+    <jar href="lib\spring-context-support-4.3.7.RELEASE-sources.jar" size="181852" download="eager" />
+    <jar href="lib\spring-context-support-4.3.7.RELEASE.jar" size="187092" download="eager" />
+    <jar href="lib\spring-core-4.3.7.RELEASE-javadoc.jar" size="1464223" download="eager" />
+    <jar href="lib\spring-core-4.3.7.RELEASE-sources.jar" size="734386" download="eager" />
+    <jar href="lib\spring-core-4.3.7.RELEASE.jar" size="1118609" download="eager" />
+    <jar href="lib\spring-expression-4.3.7.RELEASE-javadoc.jar" size="548192" download="eager" />
+    <jar href="lib\spring-expression-4.3.7.RELEASE-sources.jar" size="205992" download="eager" />
+    <jar href="lib\spring-expression-4.3.7.RELEASE.jar" size="263286" download="eager" />
+    <jar href="lib\spring-instrument-4.3.7.RELEASE-javadoc.jar" size="20852" download="eager" />
+    <jar href="lib\spring-instrument-4.3.7.RELEASE-sources.jar" size="1987" download="eager" />
+    <jar href="lib\spring-instrument-4.3.7.RELEASE.jar" size="7247" download="eager" />
+    <jar href="lib\spring-instrument-tomcat-4.3.7.RELEASE-javadoc.jar" size="40082" download="eager" />
+    <jar href="lib\spring-instrument-tomcat-4.3.7.RELEASE-sources.jar" size="6449" download="eager" />
+    <jar href="lib\spring-instrument-tomcat-4.3.7.RELEASE.jar" size="10565" download="eager" />
+    <jar href="lib\spring-jdbc-4.3.7.RELEASE-javadoc.jar" size="1146487" download="eager" />
+    <jar href="lib\spring-jdbc-4.3.7.RELEASE-sources.jar" size="448162" download="eager" />
+    <jar href="lib\spring-jdbc-4.3.7.RELEASE.jar" size="427740" download="eager" />
+    <jar href="lib\spring-jms-4.3.7.RELEASE-javadoc.jar" size="579239" download="eager" />
+    <jar href="lib\spring-jms-4.3.7.RELEASE-sources.jar" size="261823" download="eager" />
+    <jar href="lib\spring-jms-4.3.7.RELEASE.jar" size="289253" download="eager" />
+    <jar href="lib\spring-messaging-4.3.7.RELEASE-javadoc.jar" size="802675" download="eager" />
+    <jar href="lib\spring-messaging-4.3.7.RELEASE-sources.jar" size="288519" download="eager" />
+    <jar href="lib\spring-messaging-4.3.7.RELEASE.jar" size="383231" download="eager" />
+    <jar href="lib\spring-orm-4.3.7.RELEASE-javadoc.jar" size="830538" download="eager" />
+    <jar href="lib\spring-orm-4.3.7.RELEASE-sources.jar" size="376010" download="eager" />
+    <jar href="lib\spring-orm-4.3.7.RELEASE.jar" size="476938" download="eager" />
+    <jar href="lib\spring-oxm-4.3.7.RELEASE-javadoc.jar" size="182850" download="eager" />
+    <jar href="lib\spring-oxm-4.3.7.RELEASE-sources.jar" size="71785" download="eager" />
+    <jar href="lib\spring-oxm-4.3.7.RELEASE.jar" size="85324" download="eager" />
+    <jar href="lib\spring-test-4.3.7.RELEASE-javadoc.jar" size="1207734" download="eager" />
+    <jar href="lib\spring-test-4.3.7.RELEASE-sources.jar" size="465723" download="eager" />
+    <jar href="lib\spring-test-4.3.7.RELEASE.jar" size="598978" download="eager" />
+    <jar href="lib\spring-tx-4.3.7.RELEASE-javadoc.jar" size="834913" download="eager" />
+    <jar href="lib\spring-tx-4.3.7.RELEASE-sources.jar" size="313635" download="eager" />
+    <jar href="lib\spring-tx-4.3.7.RELEASE.jar" size="267116" download="eager" />
+    <jar href="lib\spring-web-4.3.7.RELEASE-javadoc.jar" size="2001314" download="eager" />
+    <jar href="lib\spring-web-4.3.7.RELEASE-sources.jar" size="778135" download="eager" />
+    <jar href="lib\spring-web-4.3.7.RELEASE.jar" size="817936" download="eager" />
+    <jar href="lib\spring-webmvc-4.3.7.RELEASE-javadoc.jar" size="2013140" download="eager" />
+    <jar href="lib\spring-webmvc-4.3.7.RELEASE-sources.jar" size="859048" download="eager" />
+    <jar href="lib\spring-webmvc-4.3.7.RELEASE.jar" size="915615" download="eager" />
+    <jar href="lib\spring-webmvc-portlet-4.3.7.RELEASE-javadoc.jar" size="430154" download="eager" />
+    <jar href="lib\spring-webmvc-portlet-4.3.7.RELEASE-sources.jar" size="162505" download="eager" />
+    <jar href="lib\spring-webmvc-portlet-4.3.7.RELEASE.jar" size="176911" download="eager" />
+    <jar href="lib\spring-websocket-4.3.7.RELEASE-javadoc.jar" size="797587" download="eager" />
+    <jar href="lib\spring-websocket-4.3.7.RELEASE-sources.jar" size="324577" download="eager" />
+    <jar href="lib\spring-websocket-4.3.7.RELEASE.jar" size="457050" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="MovieLibrary" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="movielibrary.MovieLibrary"  name="MovieLibrary" />
+  <update check="always"/>
+</jnlp>

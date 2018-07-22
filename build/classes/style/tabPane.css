@@ -1,0 +1,50 @@
+.tab-pane{
+-fx-tab-min-height: 34px;  
+-fx-tab-max-height: 34px;  
+}
+.tab-content-area 
+{
+/*-fx-background-color: #FAFAFA;*/ 
+
+}
+.tab .tab-label 
+{
+
+-fx-text-fill: #fff;
+-fx-font-size: 13px;
+-fx-font-weight: bold;
+}
+.tab-pane *.tab-header-background 
+{
+-fx-background-color: #16171A;
+/*-fx-effect: innershadow(two-pass-box , rgba(0,0,0,0.6) , 4, 0.0 , 0 , 0);*/
+        /*-fx-effect: dropshadow(three-pass-box, #000000, 21, 0.1 , 0, 1);*/
+
+}
+/*#16171A #17181B*/
+
+.tab 
+{
+/* This is how it is done in Button, but the -1 inset caused a white line  
+ to appear beneath the tab, which looks bad, so it's taken out below.    */
+    -fx-background-color: transparent;
+/*-fx-background-radius: 5 5 0 0, 5 5 0 0, 4 4 0 0, 3 3 0 0;*/
+/*-fx-background-insets: 0 0 -1 0, 0, 1, 2;*/
+/*-fx-background-insets: 0, 1, 2;*/
+/*-fx-background-radius: 6 6 0 0, 4 4 0 0, 3 3 0 0;*/
+
+-fx-padding: 0px, 5px, 5px, 5px; 
+    /*-fx-text-fill: -fx-text-base-color;*/
+}
+.tab:selected {
+    /*-fx-background-color:blue ;*/
+    -fx-background-image:url("../img/addMovies.png");
+}
+
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-color: transparent;
+}
+.tab-pane .tab-header-area {
+    -fx-padding: 0 0 0 50;
+}
