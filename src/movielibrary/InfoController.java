@@ -47,7 +47,7 @@ public class InfoController implements Initializable {
     @FXML
     private void goToGitHub(MouseEvent event) {
         try {
-            URI u = new URI("https://github.com/hridoy569");
+            URI u = new URI("https://github.com/shohidul");
             java.awt.Desktop.getDesktop().browse(u);
         } catch (URISyntaxException ex) {
             Logger.getLogger(MainFrameController.class.getName()).log(Level.SEVERE, null, ex);
