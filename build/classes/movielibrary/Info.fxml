@@ -23,7 +23,7 @@
       </Button>
       <AnchorPane layoutX="177.0" layoutY="15.0" prefHeight="400.0" prefWidth="692.0" AnchorPane.leftAnchor="337.0" AnchorPane.rightAnchor="337.0" AnchorPane.topAnchor="15.0">
          <children>
-            <Label alignment="TOP_LEFT" layoutY="283.0" prefHeight="65.0" prefWidth="692.0" text="Fx Movie Library is created as a monthly class project. It is built using Java, JavaFX, Spring, and Hibernate with MySQL database. It does not use any API, it can save a collection of favorite movies to its database. It also can play computer's local movies and redirects to the online link." textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="283.0">
+            <Label alignment="TOP_LEFT" layoutY="283.0" prefHeight="65.0" prefWidth="692.0" text="FX Movie Library is created as a monthly class project. It is built using Java, JavaFX, Spring, and Hibernate with MySQL database. It does not use any API, it can save a collection of favorite movies to its database. It also can play computer's local movies and redirects to the online link." textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="283.0">
                <font>
                   <Font name="Lucida Bright Regular" size="14.0" />
                </font>

@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="MovieLibrary.jar" size="4136470" download="eager" />
+    <jar href="MovieLibrary.jar" size="4136467" download="eager" />
     <jar href="lib\antlr-2.7.7.jar" size="445288" download="eager" />
     <jar href="lib\classmate-1.3.0.jar" size="64110" download="eager" />
     <jar href="lib\commons-logging-1.2-javadoc.jar" size="158448" download="eager" />
